@@ -1,2 +1,0 @@
-/usr/bin/ar qc libbacktest_core.a CMakeFiles/backtest_core.dir/src/data/DataFetcher.cpp.o
-/usr/bin/ranlib libbacktest_core.a
