@@ -1,0 +1,4 @@
+/home/Valentin/Coding/Backtest-Engine/build/CMakeFiles/backtest_core.dir
+/home/Valentin/Coding/Backtest-Engine/build/CMakeFiles/BacktestEngine.dir
+/home/Valentin/Coding/Backtest-Engine/build/CMakeFiles/edit_cache.dir
+/home/Valentin/Coding/Backtest-Engine/build/CMakeFiles/rebuild_cache.dir
