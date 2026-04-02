@@ -1,0 +1,16 @@
+Makefile
+#compiled binaries
+*.out
+*.exe
+*.o
+*.obj
+*.a
+*.so
+*.dll
+
+#Debug / IDE files
+*.log
+*.swp
+*.swo
+
+.DS_Store
