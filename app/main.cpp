@@ -5,6 +5,8 @@
 
 int main(){
 	std::cout << "Starting Backtest Engine...\n";
+	DataFetcher data;
+	data.setTicker("AAPL");
 
 	return EXIT_SUCCESS;
 }

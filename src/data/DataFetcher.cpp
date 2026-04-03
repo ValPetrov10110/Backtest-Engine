@@ -4,3 +4,7 @@
 void DataFetcher::fetch(){
 
 }
+
+void DataFetcher::setTicker(std::string ticker){
+	this->ticker = ticker;
+}
