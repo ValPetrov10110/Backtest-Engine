@@ -1,27 +1,18 @@
 #include "ui/Menu.hpp"
 #include "ui/Color.hpp"
+#include "engine/BacktestEngine.hpp"
+#include "Utilities.hpp"
 
-#include <cstdlib>
 #include <iostream>
-
-// This is where my helper functions will go
-namespace{
-	// This will clear the terminal screen depending on the OS
-	void clearScreen(){
-		#ifdef _WIN32
-			std::system("cls");
-		#else
-			std::system("clear");
-		#endif
-	}
-}
 
 // This method will not display the results from loadMenuOptions()
 void MenuLoader::runMenuOption(){
-	clearScreen();
+	utility::clearScreen();
 	switch(menuSelection){
 		case 1:
 			// This will run the backtest
+			BacktestEngine engine;
+			engine.run();
 			break;
 		case 2:
 			// This will view the previous backtest results
@@ -56,7 +47,7 @@ void MenuLoader::loadMenuOptions(){
 }
 
 void MenuLoader::loadMainMenu(){
-	clearScreen();
+	utility::clearScreen();
 	std::cout << color::bold << color::cyan << "\t=================================\n";
 	std::cout << "\t|\t Backtest Engine\t|\n";
 	std::cout << "\t=================================\n" << color::reset;
