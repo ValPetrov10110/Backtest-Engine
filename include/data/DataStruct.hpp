@@ -1,9 +1,15 @@
 #pragma once
 
-struct OHLCV{
+#include <string>
+
+// This is the daily bar
+struct bar{
+	std::string symbol;
+	std::string timestamp;
+
 	double open;
 	double high;
 	double low;
 	double close;
-	double volume;
+	long long volume;
 };
