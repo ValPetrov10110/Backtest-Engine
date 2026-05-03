@@ -35,6 +35,7 @@ endif()
 
 add_library(backtest_core
 	src/data/DataFetcher.cpp
+	src/ui/Menu.cpp
 )
 
 target_include_directories(backtest_core PUBLIC
